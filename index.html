@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>Weather</title>
+
+
+
+	<link rel="stylesheet" href="./css/all.min.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+
+<body>
+
+	<div class="site-content">
+		<div class="site-header">
+			<div class="container">
+				<a class='branding' href='/'>
+					<img src="./images/logo@2x.png" width="75" height="45" alt="" class="logo">
+					<div class="logo-type">
+						<h1 class="site-title">Weather</h1>
+						<small class="site-description">tagline goes here</small>
+					</div>
+				</a>
+
+				<!-- Default snippet for navigation -->
+				<div class="main-navigation">
+					<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+					<ul class="menu">
+						<li class="menu-item current-menu-item"><a href='/'>Home</a></li>
+						<li class="menu-item"><a href="#">News</a></li>
+						<li class="menu-item"><a href="#">Live cameras</a></li>
+						<li class="menu-item"><a href="#">Photos</a></li>
+						<li class="menu-item"><a href='/contact'>Contact</a></li>
+					</ul> <!-- .menu -->
+				</div> <!-- .main-navigation -->
+
+				<div class="mobile-navigation"></div>
+
+			</div>
+		</div>
+		<!-- .site-header -->
+
+		<div class="hero" data-bg-image="./images/banner.png" style="background-image: url(./images/banner.png);">
+			<div class="container">
+				<form class="find-location">
+					<input type="text" placeholder="Find your location..." id="search">
+					<input type="button" value="Find" id="submit">
+				</form>
+
+			</div>
+		</div>
+		<div class="forecast-table">
+			<div class="container">
+				<div class="forecast-container" id="forecast">
+
+					<div class="today forecast col-md-4">
+						<div class="forecast-header" id="today">
+							<div class="day" id="today-day">Monday</div>
+							<div class=" date" id="today-date">21 June</div>
+						</div> <!-- .forecast-header -->
+						<div class="forecast-content" id="current">
+							<div class="location" id="location">Cairo</div>
+							<div class="degree">
+								<div class="num" id="degree-num">28.1<sup>o</sup>C</div>
+
+								<div class="forecast-icon">
+									<img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="" width="90" id="today-img">
+								</div>
+
+							</div>
+							<div class="custom" id="today-condition-text">Clear</div>
+
+							<div class="d-flex p-3 text-light"> 
+
+								<div class="d-flex flex-row me-5">
+									<img src="images/icon-umberella@2x.png" width="25px" height="30"  alt="" class="me-1">
+									<p id="humidity" class="mt-2">20</p>
+									<p class="mt-2 ">%</p>
+								</div>
+	
+								<div class="d-flex me-3 flex-row me-5">
+									<img src="images/icon-wind@2x.png" width="25px" height="30"  alt="" class="me-1">
+									<p id="wind" class="mt-2">20</p>
+									<p class="mt-2 ms-1">km/h</p>
+								</div>
+								<div class="d-flex me-3 flex-row me-5">
+									<img src="images/icon-compass@2x.png" width="25px" height="30"  alt="" class="me-1">
+									<p id="wind-direction" class="mt-2">20</p>
+								</div>
+							</div>
+						
+							
+							
+							<!-- <span id="wind-direction"><img src="images/icon-compass@2x (1).png"  width="25px" alt="">East</span> -->
+						</div>
+					</div>
+
+					<div class="forecast col-md-4">
+						<div class="forecast-header">
+							<div class="nextday">Tuesday</div>
+						</div> <!-- .forecast-header -->
+						<div class="forecast-content">
+							<div class="forecast-icon">
+								<img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48"  class="next-condition-img">
+							</div>
+							<!-- <div class="num" id="degree-num">28.1<sup>o</sup>C</div> -->
+							<div class="next-max-temp" >39.9 <sup>o</sup>C</div>
+							<small  class="next-min-temp">25.4<sup>o</sup></small>
+							<div class="custom nextText">Sunny</div>
+						</div>
+					</div>
+
+
+					<div class="forecast col-md-4">
+						<div class="forecast-header">
+							<div class="nextday">Tuesday</div>
+						</div> <!-- .forecast-header -->
+						<div class="forecast-content">
+							<div class="forecast-icon">
+								<img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48" class="next-condition-img">
+							</div>
+							<div class="next-max-temp">40.3<sup>o</sup>C</div>
+							<small class="next-min-temp">24.8<sup>o</sup></small>
+							<div class="custom nextText">Sunny</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<form action="#" class="subscribe-form" id="form2">
+							<input type="text" placeholder="Enter your email to subscribe...">
+							<input type="submit" value="Subscribe">
+						</form>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<div class="social-links">
+							<a href="#"><i class="fa-brands fa-facebook"></i></a>
+							<a href="#"><i class="fa-brands fa fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-google-plus"></i></a>
+							<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+			</div>
+		</footer> <!-- .site-footer -->
+	</div>
+
+
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/main.js"></script>
+	<!-- <script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script src="index.js"></script> -->
+</body>
+
+</html>
